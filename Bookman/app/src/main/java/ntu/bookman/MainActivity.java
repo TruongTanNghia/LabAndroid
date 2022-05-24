@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         //Tạo mới/Mở CSDL
         databaseBook = SQLiteDatabase.openOrCreateDatabase("data/data/ntu.bookman/MyBook.db",null);
 
-        //TaoBangVaThemDuLieu();
+        TaoBangVaThemDuLieu();
         NapDSVaoListView();
 
         btnThem = (Button) findViewById(R.id.btnThem);
@@ -161,10 +161,10 @@ public class MainActivity extends AppCompatActivity {
                 "Page integer, Price Float, Description text);\n";
         databaseBook.execSQL(sqlTaoBang);
         //Thêm bảng ghi
-        String sqlThem1 = "INSERT INTO BOOKS VALUES(1, 'Java', 100, 9.99, 'sách về\n" +
+        String sqlThem1 = "INSERT INTO BOOKS VALUES(1, 'Đất nước', 100, 9.99, 'Thơ\n" +
                 "java');\n";
         databaseBook.execSQL(sqlThem1);
-        String sqlThem2 = "INSERT INTO BOOKS VALUES(2, 'Android', 320, 19.00, 'Android cơ\n" +
+        String sqlThem2 = "INSERT INTO BOOKS VALUES(2, 'Quê tôi', 320, 19.00, 'Thơ\n" +
                 "bản');\n";
         databaseBook.execSQL(sqlThem2);
         String sqlThem3 = "INSERT INTO BOOKS VALUES(3, 'Học làm giàu', 120, 0.99, 'sách đọc\n" +

@@ -1,45 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/edMaChon"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chieu cao"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chieucao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="nhap chieu cao"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="7dp"
         android:orientation="horizontal">
-        <Button
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnThem"
-            android:text="Thêm"/>
+            android:text="do dai day"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="nhap do dai day"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
         <Button
+            android:id="@+id/chuvi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSua"
-            android:text="Sửa"/>
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/purple_200"
+            android:text="  chu vi  "
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
         <Button
+            android:id="@+id/dientich"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnXoa"
-            android:text="Xóa"/>
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/purple_200"
+            android:text="dien tich"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
     </LinearLayout>
 
 
-
-
-
-    <ListView
-        android:id="@+id/lvSach"
+    <TextView
+        android:id="@+id/ketqua"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="250dp"
+        android:layout_margin="15dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:hint="Ket Qua"
+        android:textSize="25dp" />
+    <Button
+        android:id="@+id/xoa_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@color/purple_200"
+        android:text="xoa"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
